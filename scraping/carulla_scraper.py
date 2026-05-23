@@ -37,7 +37,7 @@ async def scrape():
         ))
 
         async with httpx.AsyncClient() as cliente:
-            for page_num in range(10):
+            for page_num in range(1):
                 url = f"{BASE_URL}/despensa?category-1=despensa&facets=category-1&sort=score_desc&page={page_num}"
                 print(f"\n📄 Página {page_num}/49...")
 

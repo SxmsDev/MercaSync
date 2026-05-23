@@ -11,8 +11,8 @@ from scraping.megatiendas_scraper import scrape as scrape_megatiendas
 
 SCRAPERS = [
     ("Carulla",      scrape_carulla),
-    ("Olímpica",     scrape_olimpica),
     ("Megatiendas",  scrape_megatiendas),
+    ("Olímpica",     scrape_olimpica),
 ]
 
 

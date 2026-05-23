@@ -78,7 +78,7 @@ async def presionar_mostrar_mas(page):
             await boton.scroll_into_view_if_needed()
             await asyncio.sleep(2)
             await boton.click(force=True)
-            for _ in range(10):
+            for _ in range(40):
                 await asyncio.sleep(1)
                 if await page.locator('[data-af-element="search-result"]').count() > productos_antes:
                     break
